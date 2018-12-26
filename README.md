@@ -42,3 +42,17 @@
                 }
 
             })
+            
+            
+ ## Use
+     allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	    }
+        
+        
+    dependencies {
+	        implementation 'com.github.SundayYoung:HttpUtils:v1.0.2'
+	        }
