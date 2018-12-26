@@ -3,9 +3,9 @@ package com.felix.httputils
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.felix.httputils.bean.TestGetRequest
-import com.felix.httputils.net.BaseServerResponse
-import com.felix.httputils.net.RestBaseCallBack
-import com.felix.httputils.utils.HttpUtils
+import com.felix.library.net.BaseServerResponse
+import com.felix.library.net.RestBaseCallBack
+import com.felix.library.utils.HttpUtils
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

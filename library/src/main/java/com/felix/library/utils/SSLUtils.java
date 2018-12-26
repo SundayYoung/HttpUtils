@@ -1,4 +1,4 @@
-package com.felix.httputils.utils;
+package com.felix.library.utils;
 
 import android.content.Context;
 import okhttp3.CertificatePinner;

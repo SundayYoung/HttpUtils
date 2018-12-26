@@ -1,4 +1,4 @@
-package com.felix.httputils.net;
+package com.felix.library.net;
 
 /**
  * Created by liuhaiyang on 2016/9/6.

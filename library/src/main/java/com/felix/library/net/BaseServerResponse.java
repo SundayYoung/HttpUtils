@@ -1,4 +1,4 @@
-package com.felix.httputils.net;
+package com.felix.library.net;
 
 import java.io.Serializable;
 
