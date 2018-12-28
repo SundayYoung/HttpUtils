@@ -2,7 +2,7 @@ package com.felix.library.net;
 
 
 import android.util.Log;
-import com.felix.library.utils.JsonUtils;
+import com.felix.library.utils.MoshiUtils;
 import retrofit2.Call;
 import retrofit2.Callback;
 
@@ -36,7 +36,7 @@ public abstract class RestBaseCallBack<D> implements Callback<BaseServerResponse
         if (baseResponse.code == 0) {
             D d = null;
             try {
-                d = JsonUtils.decode(baseResponse.data, getType());
+                d = MoshiUtils.toBean(baseResponse.data, getType());
             } catch (Exception e) {
                 Log.e("HttpResponse:", e.toString());
             }

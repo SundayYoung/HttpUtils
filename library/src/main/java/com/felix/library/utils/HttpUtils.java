@@ -15,7 +15,7 @@ import java.util.Map;
 public class HttpUtils {
 
     public static void getData(String url, Object request, RestBaseCallBack callBack) {
-        Map<String, Object> queryMap = JsonUtils.javaBeanToMap(request);
+        Map<String, Object> queryMap = MoshiUtils.toMap(request);
         RestService mRestService = getService();
         Call<BaseServerResponse> mCall;
         mCall = mRestService.loadData(url, queryMap);

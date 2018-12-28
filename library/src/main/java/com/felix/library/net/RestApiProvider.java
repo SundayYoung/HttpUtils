@@ -7,6 +7,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.converter.moshi.MoshiConverterFactory;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -58,8 +59,8 @@ public final class RestApiProvider implements RestApiProviderBase {
             mRetrofit = new Retrofit.Builder()
                     .client(mOkHttpClient)
                     .baseUrl("http://hiyoung.top")
-                    .addConverterFactory(GsonConverterFactory.create())
-                    //.addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+//                    .addConverterFactory(GsonConverterFactory.create())
+                    .addConverterFactory(MoshiConverterFactory.create())
                     .build();
         }
         return sInstance;
